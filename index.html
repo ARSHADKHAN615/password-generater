@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>password generator</title>
+</head>
+
+<body>
+    <div class="pg-container">
+        <div class="pg-header">
+            <div class="pg-txt">
+                <span id="password_txt">scs45425s4cv4</span>
+                <button id="pg-btn">
+                    Click to Copy
+                </button>
+            </div>
+        </div>
+        <div class="pg-body">
+            <div class="pg-control">
+                <label for="length">LENGTH</label>
+                <input type="number" min="4" max="20" id="length" value="4">
+            </div>
+            <div class="pg-control">
+                <label for="upper">UPPERCASE</label>
+                <input type="checkbox" name="a" id="upper">
+            </div>
+            <div class="pg-control">
+                <label for="lower">LOWERCASE</label>
+                <input type="checkbox" name="a" id="lower">
+            </div>
+            <div class="pg-control">
+                <label for="number">NUMBER</label>
+                <input type="checkbox" name="a" id="number">
+            </div>
+            <div class="pg-control">
+                <label for="symbol">SYMBOL</label>
+                <input type="checkbox" name="a" id="symbol">
+            </div>
+        </div>
+        <button id="generator">Generate Password</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

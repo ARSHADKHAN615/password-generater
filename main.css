@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column-reverse;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+    background-color: rgb(161, 132, 132);
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.pg-container {
+    background-color: white;
+    width: 40%;
+    min-height: 30%;
+    border-radius: 0.3rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 0px 10px rgba(15, 14, 14, 0.705);
+}
+
+.pg-txt {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(91, 146, 146);
+    display: flex;
+    border-radius: 0.3rem;
+    position: relative;
+    padding: 0.5rem;
+    color: white;
+}
+
+#pg-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 0%;
+    padding: 0.4rem 0.5rem;
+    border-radius: 0.3rem;
+    font-size: 0.9rem;
+    background-color: darkorchid;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    font-family: inherit;
+    transform: translateY(10px);
+}
+
+.pg-txt:hover #pg-btn {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.pg-control {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+}
+
+#generator {
+    width: 80%;
+    padding: 0.4rem 0.4rem;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: yellowgreen;
+    transition: all 0.45s;
+    font-family: inherit;
+}
+
+#generator:hover {
+    background-color: rgb(128, 170, 43);
+}
+
+#generator:active {
+    transform: scale(0.9);
+}
+
+.copyBox {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgb(193, 245, 141);
+    padding: 0.6rem 1rem;
+    border-radius: 0.4rem;
+    animation: slide 0.4s;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(200px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
