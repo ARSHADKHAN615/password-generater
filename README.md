@@ -1,4 +1,4 @@
- # [Scramble Game](https://arshadkhan615.github.io/password-generater/)
+ # [Password Generater](https://arshadkhan615.github.io/password-generater/)
 
 **SPECIALTY**
 
